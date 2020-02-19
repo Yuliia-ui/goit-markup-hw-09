@@ -242,11 +242,13 @@ html {
   text-decoration: none;
 }
 /*about*/
-.about__symbol {
+.about__icons {
   display: block;
-  width: 50px;
-  height: 50px;
-  fill: #1b0d24;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  fill: #1abc9c;
 }
 .about {
   padding-top: 93px;
@@ -285,39 +287,6 @@ html {
   color: #555252;
   font-family: 'Open Sans';
   font-weight: 300;
-}
-
-.about__item--icon-2::before {
-  display: inline-block;
-  width: 66px;
-  height: 66px;
-  content: '';
-  background-image: url(../images/tv.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.about__item--icon-3::before {
-  display: inline-block;
-  width: 66px;
-  height: 66px;
-  content: '';
-  background-image: url(../images/world.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.about__item--icon-4::before {
-  display: inline-block;
-  width: 66px;
-  height: 66px;
-  content: '';
-  background-image: url(../images/compas.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 /*new collection*/
