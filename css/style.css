@@ -33,6 +33,13 @@ html {
 
 /*menu-section*/
 
+.active-menu__icons {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: #fefefe;
+}
+
 .top-header {
   background-color: #1abc9c;
   font-family: 'Open Sans';
@@ -44,6 +51,7 @@ html {
   padding-top: 17px;
   padding-bottom: 11px;
 }
+
 .active-menu__list {
   display: flex;
   margin: 0;
@@ -59,34 +67,11 @@ html {
 }
 
 .active-menu__mail {
-  padding-left: 15px;
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 0px;
   line-height: 11px;
   color: #fefefe;
-}
-
-.active-menu__tel::before {
-  content: '';
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-image: url(../images/tell.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-.active-menu__mail::before {
-  padding-left: 10px;
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 15px;
-  background-image: url(../images/mail.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
 }
 
 .active-menu__tel:hover,
@@ -246,8 +231,8 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
-  height: 100px;
+  width: 66px;
+  height: 66px;
   fill: #1abc9c;
 }
 .about {
@@ -383,48 +368,45 @@ html {
   transition: opacity var(--animation-time) var(--timing-fn) 250ms;
 }
 
-.actions__button--heart {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.actions__icons {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+
+.actions__button {
+  margin-right: 6px;
+  margin-bottom: 6px;
   width: 50px;
   height: 50px;
-  background-image: url(../images/icons/heart.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #ffffff;
 }
-.actions__button--random {
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
-  background-image: url(../images/icons/random.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ffffff;
+
+.actions__button:hover {
+  background-color: #1abc9c;
 }
-.actions__button--clock {
-  width: 50px;
-  height: 50px;
-  background-image: url(../images/icons/clock.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ffffff;
-}
+
 .actions__button--cart {
-  width: 169px;
+  font-size: 14px;
   height: 50px;
-  background-image: url(../images/icons/cart.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left;
-  background-color: rgba(0, 0, 0, 0);
+  width: 160px;
+  text-align: start;
   border: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.actions__icons--cart {
+  margin: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+
+.actions__text {
+  position: relative;
+  margin-left: 50px;
   font-size: 14px;
   line-height: 32px;
   color: #ffffff;
@@ -432,20 +414,9 @@ html {
   font-weight: 400;
   text-align: center;
 }
-.actions__button--heart:hover {
-  background-color: #1abc9c;
-}
-
-.actions__button--random:hover {
-  background-color: #1abc9c;
-}
-
-.actions__button--clock:hover {
-  background-color: #1abc9c;
-}
 
 .actions__button--cart:hover {
-  background-color: #323232;
+  background-color: #1abc9c;
 }
 
 .media {
